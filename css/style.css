@@ -175,6 +175,108 @@ a:hover {
   bottom: -12px;
 }
 
+.title-brochure{
+  font-size: 1.6rem;
+  position: relative;
+}
+
+
+.btn-slide, .btn-slide2 {
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  width: 200px;
+  line-height: 50px;
+  padding: 0;
+  border-radius: 50px;
+  background: #fdfdfd;
+  border: 2px solid #0099cc;
+  margin: 10px;
+  transition: .5s;
+  text-align: center;
+}
+
+.btn-slide2 {
+  border: 2px solid #efa666;
+}
+
+.btn-slide:hover {
+  background-color: #0099cc;
+}
+
+.btn-slide2:hover {
+  background-color: #efa666;
+}
+
+.btn-slide:hover span.circle, .btn-slide2:hover span.circle2 {
+  left: 100%;
+  margin-left: -45px;
+  background-color: #fdfdfd;
+  color: #0099cc;
+}
+
+.btn-slide2:hover span.circle2 {
+  color: #efa666;
+}
+
+.btn-slide:hover span.title, .btn-slide2:hover span.title2 {
+  left: 40px;
+  opacity: 0;
+}
+
+.btn-slide:hover span.title-hover, .btn-slide2:hover span.title-hover2 {
+  opacity: 1;
+  left: 40px;
+}
+
+.btn-slide span.circle, .btn-slide2 span.circle2 {
+  display: block;
+  background-color: #0099cc;
+  color: #fff;
+  position: absolute;
+  float: left;
+  margin: 5px;
+  line-height: 42px;
+  height: 40px;
+  width: 40px;
+  top: 0;
+  left: 0;
+  transition: .5s;
+  border-radius: 50%;
+}
+
+.btn-slide2 span.circle2 {
+  background-color: #efa666;
+}
+
+.btn-slide span.title,
+.btn-slide span.title-hover, .btn-slide2 span.title2,
+.btn-slide2 span.title-hover2 {
+  position: absolute;
+  left: 90px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: bold;
+  color: #30abd5;
+  transition: .5s;
+}
+
+.btn-slide2 span.title2,
+.btn-slide2 span.title-hover2 {
+  color: #efa666;
+  left: 80px;
+}
+
+.btn-slide span.title-hover, .btn-slide2 span.title-hover2 {
+  left: 80px;
+  opacity: 0;
+}
+
+.btn-slide span.title-hover, .btn-slide2 span.title-hover2 {
+  color: #fff;
+}
+
 /*------/ Box /------*/
 
 .box-pl2 {
@@ -677,11 +779,13 @@ a:hover {
 }
 
 .about-mf .about-img {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .about-mf .about-img img {
   margin-left: 10px;
+  height: 500px;
+  width: 400px;
 }
 
 .skill-mf span {
@@ -722,7 +826,7 @@ a.fa-facebook {
   color: white;
 }
 
-a.fa-twitter {
+a.fa-telegram {
   background: #55ACEE;
   color: white;
 }
@@ -788,6 +892,35 @@ a.fa-instagram {
 .service-box .s-description {
   color: #4e4e4e;
 }
+
+#sociallocker {
+	position: relative;
+	max-width: 500px;
+	overflow: hidden;
+	border-radius:10px;
+}
+#sociallocker-overlay {
+	background-color: rgba(0,0,0,0.6);
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffffff;
+	transition: all 0.2s ease;
+}
+#sociallocker-overlay i {
+	margin-right: 10px;
+}
+#sociallocker-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	left: 0;
+}
+
+
 
 /*======================================
 //--//-->   COUNTER
