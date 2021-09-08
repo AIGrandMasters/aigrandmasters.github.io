@@ -148,6 +148,10 @@ a:hover {
   color: #4e4e4e;
 }
 
+#portfolio, #sub-portfolio, #port-line {
+  color: white;
+}
+
 .line-mf {
   width: 40px;
   height: 5px;
@@ -963,11 +967,19 @@ a.fa-instagram {
 //--//-->   PORTFOLIO
 ======================================*/
 
+.brouchere-content {
+  margin: 10px auto;
+  padding: 5px 5px;
+  color:white;
+  height: 300px;
+}
+
 .work-box {
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: #fff;
+  border-radius: 5px;
 }
 
 .work-box:hover img {
@@ -978,10 +990,12 @@ a.fa-instagram {
 .work-img {
   display: block;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 .work-img img {
   transition: all 1s;
+  border-radius: 5px;
 }
 
 .work-content {
@@ -1018,13 +1032,41 @@ a.fa-instagram {
 /*======================================
 //--//-->   TESTIMONIALS
 ======================================*/
+.shorthand {
+  list-style: '♥ ' outside none;
+}
+
+.shorthand {
+  font-family: monospace;
+  list-style: none;
+  padding: 0;
+  
+}
+
+.shorthand li {
+  margin: 0;
+  padding-left: 1.5em;
+  position: relative;  
+}
+
+.shorthand li::after {
+  content: '';
+  height: .4em;
+  width: .4em;
+  background: #D2153A;
+  display: block;
+  position: absolute;
+  transform: rotate(45deg);
+  top: .25em;
+  left: 0;
+}
 
 .testimonials .owl-carousel .owl-item img {
   width: auto;
+  margin-top: 10px;
 }
 
 .testimonial-box {
-  color: #fff;
   text-align: center;
 }
 
@@ -1037,12 +1079,17 @@ a.fa-instagram {
 }
 
 .testimonial-box .author {
-  color: #fff;
   text-transform: uppercase;
   font-weight: 600;
   margin: 1rem 0;
   display: block;
   font-size: 1.4rem;
+  color: black;
+}
+
+.testimonial-box .author-test img {
+  width: 100 px;
+  height: 100px;
 }
 
 .testimonial-box .comit {

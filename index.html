@@ -27,7 +27,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body id="page-top">
+<body id="page-top"  oncontextmenu="return false;">
 
   <!--/ Nav Star /-->
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
@@ -52,7 +52,7 @@
             <a class="nav-link js-scroll" href="#courses">Courses</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#mentor">Mentorship Programme</a>
+            <a class="nav-link js-scroll" href="#mentor">Mentorship Program</a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link js-scroll" href="#blog">Blog</a>
@@ -442,7 +442,7 @@
               <h2 class="s-title">Machine Learning System Design</h2>
               <p class="s-description text-center">
                 This course will cover system design concepts of Data scientists and Machine Learning.
-                 Concepts will cover data pipeline and MlOps.
+                 Concepts will cover data pipeline and MLOps.
               </p>
               <div class="box bg-1">
                 <button class="button">
@@ -477,76 +477,25 @@
   </section>
   <!--/ Section Services End /-->
 
-  <div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
+  <!--/ Section Mentorship Programme /-->
+  <section id="mentor" class="section-counter paralax-mf bg-image portfolio-mf sect-pt4 route" style="background-image: url(img/counters-bg.jpg)">
     <div class="overlay-mf"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">6</p>
-              <span class="counter-text">WORKS COMPLETED</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">2</p>
-              <span class="counter-text">YEARS OF EXPERIENCE</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ios-people"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">6</p>
-              <span class="counter-text">TOTAL CLIENTS</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">2</p>
-              <span class="counter-text">AWARD WON</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--/ Section Portfolio Star /-->
-  <section id="mentor" class="portfolio-mf sect-pt4 route">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
           <div class="title-box text-center">
-            <h3 class="title-a">
-              Portfolio
+            <h3 class="title-a" id="portfolio">
+              Mentorship Programme
             </h3>
-            <p class="subtitle-a">
-              Here are some of my projects on Internet.
+            <p class="subtitle-a" id="sub-portfolio">
+              We offer special programme for those who really need
             </p>
-            <div class="line-mf"></div>
+            <div class="line-mf" id="port-line"></div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-7">
           <div class="work-box">
             <a href="img/myapps.jpg" target="_blank"  data-lightbox="gallery-mf">
               <div class="work-img">
@@ -555,9 +504,9 @@
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Android Apps</h2>
+                    <h2 class="w-title">Brochure for the programme</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">App Development</span> / <span class="w-date">2017</span>
+                      <span class="w-date"> Reach us</span> / <span class="w-ctegory">contact-us@aigrandmasters.org</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
@@ -570,172 +519,73 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://www.researchgate.net/publication/324228506_An_Efficient_Procedure_for_Characteristic_mining_of_Mathematical_Formulas_from_Document" target="_blank">
-              <div class="work-img">
-                <img src="img/math.png" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Clustering Math Formule</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Programming</span> / <span class="w-date">2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div class="col-md-5">
+          <div class="brouchere-content">
+            <p>
+              In addition to our regular curriculum, we are offering a mentorship program for the 
+              people who require special guidance and a special focus on their career aspects.
+              Advantage.
+            </p> 
+            <p><b>Benefits of this program</b></p>
+            <ul class="shorthand">
+              <li>Weekly assignments</li>
+              <li>Private Group Discussions</li>
+              <li>Mock Interviews</li>
+              <li>Industrial Exposure</li>
+              <li>Course Completion Certifications.</li>
+              <li>Peer-to-peer plan</li>
+            </ul>
+            <p>Many more.. for more details of the program and fee structure please go through below document</p>
+            <a href="pdf/Road-Map-Presentation.pdf" target="_blank" class="btn-slide">
+              <span class="circle"><i class="fa fa-rocket"></i></span> 
+              <span class="title">Get Copy</span>
+              <span class="title-hover">Click here</span>
             </a>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://radian2k18.anits.edu.in/" target="_blank">
-              <div class="work-img">
-                <img src="img/radian.png" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">College Website</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Development</span> / <span class="w-date">2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://github.com/lavakumarThatisetti/OnlineBookStore" target="_blank">
-              <div class="work-img">
-                <img src="img/onlineBookStore.png" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Online Book Store</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">2019</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://github.com/lavakumarThatisetti/CHAT-BOT-UI-" target="_blank">
-              <div class="work-img">
-                <img src="img/chatui.png" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Chat Bot UI</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">2019</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/apps.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/apps.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Modern Apps</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Flutter App Development</span> / <span class="w-date">2020</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>             
+        </div>           
       </div>
     </div>
   </section>
   <!--/ Section Portfolio End /-->
 
-  <!--/ Section Testimonials Star /-->
-  <div class="testimonials paralax-mf bg-image" style="background-image: url(img/overlay-bg.jpg)">
-    <div class="overlay-mf"></div>
+  <!--/ Section Blog Star /-->
+  <div class="testimonials">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div id="testimonial-mf" class="owl-carousel owl-theme">
             <div class="testimonial-box">
               <div class="author-test">
-                <img src="img/freelance.jpg" alt="" class="rounded-circle b-shadow-a">
-                <span class="author">FreeLancer</span>
+                <img src="img/albert.jpg" alt="" class="rounded-circle b-shadow-a">
+                <span class="author">Albert Einstein</span>
               </div>
               <div class="content-test">
                 <p class="description lead">
-                  I Started Working as a FreeLancer from My B.tech final year. I loved it and yes I was paid.
+                  Any fool can know. The point is to understand.
                 </p>
                 <span class="comit"><i class="fa fa-quote-right"></i></span>
               </div>
             </div>
             <div class="testimonial-box">
               <div class="author-test">
-                <img src="img/adp.jpg" alt="" class="rounded-circle b-shadow-a">
-                <span class="author">ADP</span>
+                <img src="img/scorates.jpg" alt="" class="rounded-circle b-shadow-a">
+                <span class="author">Socrates</span>
               </div>
               <div class="content-test">
                 <p class="description lead">
-                  My first company after my B.tech graduation. Good company but lack of tech stack, because of
-                  an old established company using very old technologies for freshers maybe not a great start.
+                  The only true wisdom is in knowing you know nothing.
                 </p>
                 <span class="comit"><i class="fa fa-quote-right"></i></span>
               </div>
             </div>
             <div class="testimonial-box">
               <div class="author-test">
-                <img src="img/dbs.png" alt="" class="rounded-circle b-shadow-a">
-                <span class="author">DBS</span>
+                <img src="img/nick.jpg" alt="" class="rounded-circle b-shadow-a">
+                <span class="author">Nick Bostrom</span>
               </div>
               <div class="content-test">
                 <p class="description lead">
-                  My second company. As it is a bank using a very good stack when it comes to Package "Ok" not great.
-                  Good start to anyone. One can expect a good career scope. 
+                  Machine Learnng is the last invention that humanity will ever need to make
                 </p>
                 <span class="comit"><i class="fa fa-quote-right"></i></span>
               </div>
@@ -745,116 +595,6 @@
       </div>
     </div>
   </div>
-
-  <!--/ Section Blog Star /-->
-  <section id="blog" class="blog-mf sect-pt4 route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              Blogs
-            </h3>
-            <p class="subtitle-a">
-              Here are my Awesome Blogs & work and My Youtube channel I explained tutorials on Various Tech Stack
-            </p>
-            <div class="line-mf"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-img">
-              <a href="http://lavatechzone.blogspot.com/2017/05/present-technical-trends-which-rules.html" target="_blank"><img src="img/blogpost.png" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Blogspot</h6>
-                </div>
-              </div>
-              <h3 class="card-title"><a href="http://lavatechzone.blogspot.com/2017/05/present-technical-trends-which-rules.html" target="_blank">Check out my Blog here</a></h3>
-              <p class="card-description">
-                In this blog I Explained Complete Tutorials regarding web development concepts.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="post-author">
-                <a href="#">
-                  <img src="img/lavakumar.jpg" alt="" class="avatar rounded-circle">
-                  <span class="author">Lava Kumar Thatisetti</span>
-                </a>
-              </div>
-              <div class="post-date">
-                <span class="ion-ios-clock-outline"></span> Recent
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-img">
-              <a href="https://www.youtube.com/channel/UCnM3YeyV4d3ezuvFUYH7P0Q" target="_blank"><img src="img/ytimage.png" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">You tube</h6>
-                </div>
-              </div>
-              <h3 class="card-title"><a href="https://www.youtube.com/channel/UCnM3YeyV4d3ezuvFUYH7P0Q" target="_blank">Check out my Youtube</a></h3>
-              <p class="card-description">
-                I explained tutorials on youtube concepts like
-                Web Design, Data Science, Tkinter, Coding Questions, Photoshop, etc.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="post-author">
-                <a href="#">
-                  <img src="img/lavakumar.jpg" alt="" class="avatar rounded-circle">
-                  <span class="author">Lava Kumar Thatisetti</span>
-                </a>
-              </div>
-              <div class="post-date">
-                <span class="ion-ios-clock-outline"></span> Recent
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-img">
-              <a href="https://github.com/lavakumarThatisetti"><img src="img/project.png" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Projects</h6>
-                </div>
-              </div>
-              <h3 class="card-title"><a href="https://github.com/lavakumarThatisetti">Here are my projects</a></h3>
-              <p class="card-description">
-                This is the blog which I explained all my projects in detail based on data science, web and,
-                app development etc.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="post-author">
-                <a href="#">
-                  <img src="img/lavakumar.jpg" alt="" class="avatar rounded-circle">
-                  <span class="author">Lava Kumar Thatisetti</span>
-                </a>
-              </div>
-              <div class="post-date">
-                <span class="ion-ios-clock-outline"></span> Recent
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
   <!--/ Section Blog End /-->
 
   <!--/ Section Contact-Footer Star /-->
@@ -866,7 +606,7 @@
           <div class="contact-mf">
             <div id="contact" class="box-shadow-full">
               <div class="row">
-                <!-- <div class="col-md-6">
+                <div class="col-md-6">
                   <div class="title-box-2">
                     <h5 class="title-left">
                       SEND ME A MESSAGE
@@ -907,33 +647,24 @@
                       </div>
                     </form>
                   </div>
-                </div> -->
+                </div>
                 <div class="col-md-6">
                   <div class="title-box-2 pt-4 pt-md-0">
                     <h5 class="title-left">
-                      Get in Touch
+                      Get in Touch with us
                     </h5>
                   </div>
                   <div class="more-info">
                     <p class="lead">
-                      Want to collborate with me<br/>
-                      Want a partner to discuss business and Startup ideas.<br/>
-                      For any other related queries, you can reach me.<br/>
+                      Have any doubts<br/>
+                      related to courses and programs we offering.<br/>
+                      For any other related queries, you can reach us.<br/>
                       <hr/>
-                      Don't forget to follow &#128515;
+                      <!-- Don't forget to follow &#128515; -->
                     </p>
                     <ul class="list-ico">
-                      <li><span class="ion-ios-location"></span> Hyderabad, Telengana</li>
-                      <li><span class="ion-ios-telephone"></span> (+91) 8******3</li>
-                      <li><span class="ion-email"></span> lavakumar2871997@gmail.com</li>
-                    </ul>
-                  </div>
-                  <div class="socials">
-                    <ul>
-                      <li><a href="https://www.facebook.com/lavakumar.lavakumar.9083/" target="_blank"><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
-                      <li><a href="https://www.instagram.com/lavakumar287/" target="_blank"><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
-                      <li><a href="https://twitter.com/lavakumar_t" target="_blank"><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
-                      <li><a href="https://www.linkedin.com/in/lavakumar287/" target="_blank"><span class="ico-circle"><i class="fa fa-linkedin"></i></span></a></li>
+                      <li><span class="ion-email"></span> <b>contact.ai.grandmasters@gmail.com</b></li>
+                      <li>Other soical networks will update soon  &#128515; </li>
                     </ul>
                   </div>
                 </div>
