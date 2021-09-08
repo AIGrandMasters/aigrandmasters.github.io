@@ -1033,10 +1033,6 @@ a.fa-instagram {
 //--//-->   TESTIMONIALS
 ======================================*/
 .shorthand {
-  list-style: '♥ ' outside none;
-}
-
-.shorthand {
   font-family: monospace;
   list-style: none;
   padding: 0;
@@ -1053,7 +1049,7 @@ a.fa-instagram {
   content: '';
   height: .4em;
   width: .4em;
-  background: #D2153A;
+  background: rgb(255, 186, 10);
   display: block;
   position: absolute;
   transform: rotate(45deg);
