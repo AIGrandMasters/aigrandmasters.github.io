@@ -920,6 +920,18 @@ a.fa-instagram {
 	left: 0;
 }
 
+.fa-lock{
+  color: gold;
+}
+
+.bg-1 {
+  text-align: center;
+}
+.bg-1 .button {
+	color: #37474f;
+	border-color: #37474f;
+}
+
 
 
 /*======================================
