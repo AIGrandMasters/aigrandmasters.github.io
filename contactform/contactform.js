@@ -58,60 +58,80 @@ jQuery(document).ready(function($) {
       }
     });
     f.children('textarea').each(function() { // run all inputs
-
       var i = $(this); // current input
-      var rule = i.attr('data-rule');
-
-      if (rule !== undefined) {
-        var ierror = false; // error flag for current input
-        var pos = rule.indexOf(':', 0);
-        if (pos >= 0) {
-          var exp = rule.substr(pos + 1, rule.length);
-          rule = rule.substr(0, pos);
-        } else {
-          rule = rule.substr(pos + 1, rule.length);
-        }
-
-        switch (rule) {
-          case 'required':
-            if (i.val() === '') {
-              ferror = ierror = true;
+      var rules = i.attr('data-rule');
+      var validations = rules.split(",")
+      if(validations.length>0) {
+        for(let index=0;index<validations.length;index++) {
+          var flag = false;
+          var rule = validations[index];
+          if (rule !== undefined) {
+            var ierror = false; // error flag for current input
+            var pos = rule.indexOf(':', 0);
+            if (pos >= 0) {
+              var exp = rule.substr(pos + 1, rule.length);
+              rule = rule.substr(0, pos);
+            } else {
+              rule = rule.substr(pos + 1, rule.length);
             }
-            break;
+            switch (rule) {
+              case 'required':
+                    if (i.val() === '') {
+                      ferror = ierror = true;
+                      flag = true;
+                    }
+                    break;
+              case 'minlen':
+                    if (i.val().length < parseInt(exp)) {
+                      ferror = ierror = true;
+                      flag = true;
+                    }
 
-          case 'minlen':
-            if (i.val().length < parseInt(exp)) {
-              ferror = ierror = true;
+                   break;
+              case 'maxlen':
+                    if (i.val().length > parseInt(exp)) {
+                      ferror = ierror = true;
+                      flag = true;
+                    }
+                    break;  
             }
-            break;
-        }
-        i.next('.validation').html((ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
+            i.next('.validation').html((ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
+           }
+           if(flag){
+             break;
+           }
       }
+    }
     });
     if (ferror) return false;
-    else var str = $(this).serialize();
-    var action = $(this).attr('action');
-    if( ! action ) {
-      action = 'contactform/contactform.php';
+    else {
+      $("#sendmessage").addClass("show");
+      $("#errormessage").removeClass("show");
+      $('.contactForm').find("input, textarea").val("");
     }
-    $.ajax({
-      type: "POST",
-      url: action,
-      data: str,
-      success: function(msg) {
-        // alert(msg);
-        if (msg == 'OK') {
-          $("#sendmessage").addClass("show");
-          $("#errormessage").removeClass("show");
-          $('.contactForm').find("input, textarea").val("");
-        } else {
-          $("#sendmessage").removeClass("show");
-          $("#errormessage").addClass("show");
-          $('#errormessage').html(msg);
-        }
+    // else var str = $(this).serialize();
+    //var action = $(this).attr('action');
+    // if( ! action ) {
+    //   action = 'contactform/contactform.php';
+    // }
+    // $.ajax({
+    //   type: "POST",
+    //   url: action,
+    //   data: str,
+    //   success: function(msg) {
+    //     // alert(msg);
+    //     if (msg == 'OK') {
+    //       $("#sendmessage").addClass("show");
+    //       $("#errormessage").removeClass("show");
+    //       $('.contactForm').find("input, textarea").val("");
+    //     } else {
+    //       $("#sendmessage").removeClass("show");
+    //       $("#errormessage").addClass("show");
+    //       $('#errormessage').html(msg);
+    //     }
 
-      }
-    });
+    //   }
+    // });
     return false;
   });
 
