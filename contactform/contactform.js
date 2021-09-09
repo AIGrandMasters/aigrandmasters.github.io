@@ -104,17 +104,7 @@ jQuery(document).ready(function($) {
     }
     });
     if (ferror) return false;
-    // else {
-    //   $("#sendmessage").addClass("show");
-    //   $("#errormessage").removeClass("show");
-    //   $('.contactForm').find("input, textarea").val("");
-    // }
-    else var str = $(this).serialize();
-   // var action = $(this).attr('action');
-    // if( ! action ) {
-    //   action = 'contactform/contactform.php';
-    // }
-    // console.log(str);
+    // else var str = $(this).serialize();
     let myForm = document.getElementById('contactForm');
     let formData = new FormData(myForm)
     console.log(formData);
@@ -124,7 +114,7 @@ jQuery(document).ready(function($) {
       body: new URLSearchParams(formData).toString()
     }).then(
       () => {
-        console.log('Form successfully submitted')
+        // console.log('Form successfully submitted')
         $("#sendmessage").addClass("show");
         $("#errormessage").removeClass("show");
         $('.contactForm').find("input, textarea").val("");

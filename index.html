@@ -28,7 +28,7 @@
 </head>
 
 <!-- oncontextmenu="return false;" -->
-<body id="page-top">
+<body id="page-top" oncontextmenu="return false;">
  
   <!--/ Nav Star /-->
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
@@ -615,6 +615,7 @@
                   </div>
                      <div>
                       <form method="POST" role="form" id="contactForm" class="contactForm" data-netlify="true">
+                      <div id="sendmessage">Your message has been sent. Thank you!</div>
                       <div id="errormessage"></div>
                       <div class="row">
                         <div class="col-md-12 mb-3">
@@ -646,7 +647,6 @@
                             <div data-netlify-recaptcha="true"></div>
                           </div>
                         </div>
-                        <div id="sendmessage">Your message has been sent. Thank you!</div>
                         <div class="col-md-12">
                           <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
                         </div>
