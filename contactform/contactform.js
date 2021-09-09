@@ -133,45 +133,6 @@ jQuery(document).ready(function($) {
         (error) => console.log(error)
     )
     return false;
-    // const handleSubmit = (e) => {
-    //   e.preventDefault()
-    //   let myForm = document.getElementById('contactForm');
-    //   let formData = new FormData(myForm)
-    //   fetch('/', {
-    //     method: 'POST',
-    //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    //     body: new URLSearchParams(formData).toString()
-    //   }).then(
-    //     () => {
-    //       console.log('Form successfully submitted')
-    //       $("#sendmessage").addClass("show");
-    //       $("#errormessage").removeClass("show");
-    //       $('.contactForm').find("input, textarea").val("");
-    //     }
-    //     ).catch(
-    //       (error) =>
-    //     console.log(error)
-    //     )
-    // }
-    // $.ajax({
-    //   type: "POST",
-    //   url: action,
-    //   data: str,
-    //   success: function(msg) {
-    //     // alert(msg);
-    //     if (msg == 'OK') {
-    //       $("#sendmessage").addClass("show");
-    //       $("#errormessage").removeClass("show");
-    //       $('.contactForm').find("input, textarea").val("");
-    //     } else {
-    //       $("#sendmessage").removeClass("show");
-    //       $("#errormessage").addClass("show");
-    //       $('#errormessage').html(msg);
-    //     }
-
-    //   }
-    // });
-    return false;
   });
 
 });
