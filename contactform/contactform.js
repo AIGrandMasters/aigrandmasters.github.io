@@ -104,15 +104,54 @@ jQuery(document).ready(function($) {
     }
     });
     if (ferror) return false;
-    else {
-      $("#sendmessage").addClass("show");
-      $("#errormessage").removeClass("show");
-      $('.contactForm').find("input, textarea").val("");
-    }
-    // else var str = $(this).serialize();
-    //var action = $(this).attr('action');
+    // else {
+    //   $("#sendmessage").addClass("show");
+    //   $("#errormessage").removeClass("show");
+    //   $('.contactForm').find("input, textarea").val("");
+    // }
+    else var str = $(this).serialize();
+   // var action = $(this).attr('action');
     // if( ! action ) {
     //   action = 'contactform/contactform.php';
+    // }
+    // console.log(str);
+    let myForm = document.getElementById('contactForm');
+    let formData = new FormData(myForm)
+    console.log(formData);
+    fetch('/', {
+      method: 'POST',
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString()
+    }).then(
+      () => {
+        console.log('Form successfully submitted')
+        $("#sendmessage").addClass("show");
+        $("#errormessage").removeClass("show");
+        $('.contactForm').find("input, textarea").val("");
+      }
+    ).catch(
+        (error) => console.log(error)
+    )
+    return false;
+    // const handleSubmit = (e) => {
+    //   e.preventDefault()
+    //   let myForm = document.getElementById('contactForm');
+    //   let formData = new FormData(myForm)
+    //   fetch('/', {
+    //     method: 'POST',
+    //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //     body: new URLSearchParams(formData).toString()
+    //   }).then(
+    //     () => {
+    //       console.log('Form successfully submitted')
+    //       $("#sendmessage").addClass("show");
+    //       $("#errormessage").removeClass("show");
+    //       $('.contactForm').find("input, textarea").val("");
+    //     }
+    //     ).catch(
+    //       (error) =>
+    //     console.log(error)
+    //     )
     // }
     // $.ajax({
     //   type: "POST",
@@ -132,7 +171,7 @@ jQuery(document).ready(function($) {
 
     //   }
     // });
-    return true;
+    return false;
   });
 
 });
